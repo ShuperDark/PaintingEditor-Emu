@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "mod-release",
+      "displayName": "MCPE mod (arm64, Release)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "toolchainFile": "${sourceDir}/cmake/zig-arm64-ios.cmake",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+    },
+    {
+      "name": "mod-debug",
+      "displayName": "MCPE mod (arm64, Debug)",
+      "inherits": "mod-release",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
+    }
+  ],
+  "buildPresets": [
+    { "name": "mod-release", "configurePreset": "mod-release" },
+    { "name": "mod-debug", "configurePreset": "mod-debug" }
+  ]
+}
