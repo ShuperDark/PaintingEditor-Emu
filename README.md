@@ -5,19 +5,10 @@
 
 ## 動作の様子
 
-ワールドに飾った絵画（GIF のアニメーションと写真）:
-
-https://github.com/ShuperDark/PaintingEditor-Emu/raw/main/docs/world.mp4
-
-<video src="docs/world.mp4" controls muted width="720"></video>
-
-編集画面（ドラッグで回転、画像の回転・左右反転、大きさの切り替え）:
-
-https://github.com/ShuperDark/PaintingEditor-Emu/raw/main/docs/editor.mp4
-
-<video src="docs/editor.mp4" controls muted width="720"></video>
-
-（動画が再生されないときは、上のリンクか [`docs/`](docs/) のファイルを開いてください）
+| 動画 | 内容 |
+|---|---|
+| [▶ ワールドに飾った絵画（`docs/world.mp4`）](docs/world.mp4) | GIF のアニメーションと写真の絵画 |
+| [▶ 編集画面（`docs/editor.mp4`）](docs/editor.mp4) | ドラッグで回転、画像の回転・左右反転、大きさの切り替え |
 
 ## 使い方
 
@@ -113,6 +104,7 @@ Mod を入れていない人がいる場合：
 | `src/image.cpp` | 画像のデコード（PNG / JPEG / BMP / GIF） |
 | `src/game.h` | 使っているゲームの関数のアドレスとデータの配置（Android 版のシンボルと照合して調べたもの） |
 | `third_party/stb/stb_image.h` | 画像デコーダー [stb_image](https://github.com/nothings/stb) v2.30（パブリックドメイン） |
+| `docs/` | 動作の様子の動画 |
 | `include/`, `cmake/` | エミュレータの `mod-template` と同じもの（`emu_mod.h` は画像選択の関数を追加した版） |
 
 GUI のテクスチャは、ゲームに入っているものだけを使っています（新しく作ったテクスチャはありません）。
